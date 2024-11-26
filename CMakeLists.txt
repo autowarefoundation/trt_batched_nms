@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.17)
 project(trt_batched_nms)
 
-find_package(tensorrt_common)
-if (NOT ${tensorrt_common_FOUND})
-    message(WARNING "The tensorrt_common package is not found. Please check its dependencies.")
+find_package(autoware_tensorrt_common)
+if (NOT ${autoware_tensorrt_common_FOUND})
+    message(WARNING "The autoware_tensorrt_common package is not found. Please check its dependencies.")
     return()
 endif ()
 
