@@ -9,6 +9,7 @@ endif ()
 
 find_package(autoware_cmake REQUIRED)
 autoware_package()
+add_compile_options(-Wno-deprecated-declarations)
 
 include(CheckLanguage)
 check_language(CUDA)
