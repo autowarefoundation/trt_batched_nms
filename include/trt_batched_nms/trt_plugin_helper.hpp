@@ -4,12 +4,8 @@
 
 #include "NvInferRuntime.h"
 
-#include <cudnn.h>
-
 #include <iostream>
 #include <stdexcept>
-
-cudnnStatus_t convert_trt2cudnn_dtype(nvinfer1::DataType trt_dtype, cudnnDataType_t * cudnn_dtype);
 
 // Enumerator for status
 typedef enum {
